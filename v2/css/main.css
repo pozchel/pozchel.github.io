@@ -1,0 +1,112 @@
+*,*:before, *:after {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+body {
+	height: 100%;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+/*
+ Стили для демонстрации
+ */
+ .wrapper {
+
+
+ }
+ .container {
+ 	max-width: 1180px;
+ 	margin: 0px auto;
+ 	padding: 0px 10px;
+ }
+/*
+ Основные стиди
+ */
+ .header {
+ 	position: fixed;
+ 	width: 100%;
+ 	top: 0;
+ 	left: 0;
+ 	z-index: 50;
+ }
+ /*
+	Создадим плашку	
+	*/
+	.header:before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: #5e5373;
+		z-index: 2;
+	}
+
+	.header__body {
+		position: relative;
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		justify-content: space-between;
+		height: 80px;
+		-ms-align-items: center;
+		align-items: center;
+	}
+	.header__logo {
+		-webkit-flex: 0 0 60px;
+		-moz-flex: 0 0 60px;
+		-ms-flex: 0 0 60px;
+		-o-flex: 0 0 60px;
+		flex: 0 0 60px;
+		border-radius: 50%;
+		overflow: hidden;
+		z-index: 3;
+	}
+	.header__logo img {
+		max-width: 100%;
+		display: block;
+	}
+	.header__burger {
+		display: none;
+	}
+	.header__menu {
+	}
+	.header__list {
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		position: relative;
+		z-index: 2;
+	}
+	.header__list li {
+		list-style: none;
+		margin: 0px 0px 0px 20px;
+	} 
+	.header__link {
+		color: #fff;
+		text-transform: uppercase;
+		font-size: 18px; 
+		text-decoration: none;
+	}
+
+	.header__link:hover {
+		color: #e6e1ef;
+	}
+
+	.content {
+		padding: 100px 0px 0px 0px;
+	}
+	.content__text {
+		font-size: 16px;
+		line-height: 25px;
+	}
+	.content__text p {
+		margin: 0px 0px 20px 0px;
+	}
+
